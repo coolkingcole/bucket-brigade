@@ -116,7 +116,7 @@ def main():
     parser.add_argument("-k", "--keyword", required=True, help="bucket root to make permutations")
     parser.add_argument("-s3", "--s3-bucket",action="store_true", help="Brute force AWS buckets permutations")
     parser.add_argument("-gc", "--google-bucket",action="store_true", help="Brute force GCP buckets permutations")
-    parser.add_argument("-p", "--permutations-file", default="./permutations.txt", help="Permutations file")
+    parser.add_argument("-p", "--perm-file", default="./permutations.txt", help="Permutations file")
     #parser.add_argument("-v", "--verbose", action="store_true", help="increase output verbosity")
     args = parser.parse_args()
     #s3bool=args.s3_bucket
@@ -142,4 +142,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print("Elapsed Time 4: %s" % (time.time()-start))
+    print("Elapsed Time: %s" % (time.time()-start))
