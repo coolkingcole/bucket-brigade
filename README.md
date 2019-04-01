@@ -2,6 +2,7 @@
 Brute force aws and google cloud platform buckets
 
 # Help
+```
 usage: brute_custom_multithread_v2.py [-h] [-t [THREAD_COUNT]] -k KEYWORD
                                       [-s3] [-gc] [-p PERMUTATIONS_FILE]
 
@@ -15,3 +16,4 @@ optional arguments:
   -gc, --google-bucket  bucket root to make permutations
   -p PERMUTATIONS_FILE, --permutations-file PERMUTATIONS_FILE
                         bucket root to make permutations
+```
