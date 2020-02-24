@@ -121,7 +121,7 @@ def main():
     args = parser.parse_args()
     #s3bool=args.s3_bucket
     #gcbool=args.google_bucket
-    hosts = generate_bucket_permutations(args.keyword,args.permutations_file)
+    hosts = generate_bucket_permutations(args.keyword,args.perm_file)
     #spawn a pool of threads, and pass them queue instance
     for i in range(args.thread_count):
         t = ThreadUrl(queue, outqueue, args.s3_bucket,args.google_bucket)
