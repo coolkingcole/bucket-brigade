@@ -4,7 +4,7 @@ Brute force aws and google cloud platform buckets
 # Help
 You must use the s3 or the gc flag.
 ```
-usage: brute_custom_multithread_v2.py [-h] [-t [THREAD_COUNT]] -k KEYWORD
+usage: brigade.py [-h] [-t [THREAD_COUNT]] -k KEYWORD
                                       [-s3] [-gc] [-p PERM_FILE]
                                       
 optional arguments:
@@ -14,4 +14,8 @@ optional arguments:
   -s3, --s3-bucket      Brute force AWS buckets permutations
   -gc, --google-bucket  Brute force GCP buckets permutations
   -p PERM_FILE, --perm-file PERM_FILE Permutations file
+```
+# Example
+```
+python2 brigade.py -k test -s3 -p ./permutations.txt
 ```
